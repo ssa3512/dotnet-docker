@@ -15,6 +15,30 @@ variables:
   value: 2
 - name: imageInfoVariant
   value: ""
+- name: acr.servicePrincipalName
+  value: "''"
+- name: app-dotnetdockerbuild-client-secret
+  value: "''"
+- name: acr.servicePrincipalTenant
+  value: "''"
+- name: acr.subscription
+  value: "''"
+- name: acr.resourceGroup
+  value: "''"
+- name: publishRepoPrefix
+  value: "test/"
+- name: acr.server
+  value: "''"
+- name: acr.userName
+  value: "''"
+- name: BotAccount-dotnet-docker-acr-bot-password
+  value: "''"
+- name: dotnetDockerBot.userName
+  value: "''"
+- name: dotnetDockerBot.email
+  value: "''"
+- name: BotAccount-dotnet-docker-bot-PAT
+  value: "''"
 - ${{ if eq(variables['System.TeamProject'], 'internal') }}:
   - group: DotNet-Docker-Common
   - group: DotNet-Docker-Secrets
